@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveVector;
     public bool isGrounded;
     public Vector3 jump;
-    public float jumpForce = 2.0f;
+    public float jumpForce = 5.0f;
 
     // Start is called before the first frame update
     void Start()
