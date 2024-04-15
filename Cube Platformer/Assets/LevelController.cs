@@ -6,7 +6,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] List<GameObject> Levels;
-    private int LevelCount = 0;
+    public int LevelCount = 0;
 
     private GameObject Level;
     private GameObject PrevLevel;
@@ -23,7 +23,6 @@ public class LevelController : MonoBehaviour
 
     public void Loadlevel()
     {
-
         if (LevelCount != 0)
         {
             PrevLevel = Levels[LevelCount - 1];
