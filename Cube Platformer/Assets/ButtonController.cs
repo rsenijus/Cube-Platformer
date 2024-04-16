@@ -10,7 +10,7 @@ public class ButtonController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Activate.SetActive(IsActive);
+        Reset();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,5 +19,10 @@ public class ButtonController : MonoBehaviour
         {
             Activate.SetActive(!IsActive);
         }
+    }
+
+    public void Reset()
+    {
+        Activate.SetActive(IsActive);
     }
 }

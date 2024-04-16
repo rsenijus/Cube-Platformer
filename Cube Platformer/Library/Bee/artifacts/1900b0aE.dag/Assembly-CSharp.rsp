@@ -360,6 +360,7 @@
 "Assets/Kodland_PlayerPrefs/Fox_Scripts/Fox_Logic.cs"
 "Assets/Kodland_PlayerPrefs/Fox_Scripts/Fox_Menu.cs"
 "Assets/Kodland_PlayerPrefs/Fox_Scripts/Fox_Save.cs"
+"Assets/LavaController.cs"
 "Assets/LevelController.cs"
 "Assets/PlayerController.cs"
 "Assets/WinController.cs"
