@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class LevelController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //PlayerPrefs.SetInt("LevelCount", 0);
+        //PlayerPrefs.Save();
         if (PlayerPrefs.HasKey("LevelCount"))
         {
             LevelCount = PlayerPrefs.GetInt("LevelCount");
@@ -37,6 +40,6 @@ public class LevelController : MonoBehaviour
         LevelCount++;
         PlayerPrefs.SetInt("LevelCount", LevelCount);
         PlayerPrefs.Save();
-        Loadlevel();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

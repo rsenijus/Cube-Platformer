@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Level
   - Wall
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
   - 

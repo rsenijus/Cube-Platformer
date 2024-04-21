@@ -17,7 +17,6 @@ public class WinController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.transform.position = new Vector3(-0.5f, 1f, -0.5f);
             NextLevel.NextLevel();
         }
     }
