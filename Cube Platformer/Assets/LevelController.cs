@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LevelController : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class LevelController : MonoBehaviour
 
     private GameObject Level;
     private GameObject PrevLevel;
+
+    [SerializeField] TMP_Text LevelCountUI;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class LevelController : MonoBehaviour
 
     public void Loadlevel()
     {
+        LevelCountUI.text = LevelCount + " Level";
         if (LevelCount != 0)
         {
             PrevLevel = Levels[LevelCount - 1];
